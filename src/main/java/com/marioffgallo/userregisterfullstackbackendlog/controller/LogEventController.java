@@ -38,7 +38,7 @@ public class LogEventController {
     @PostMapping(value = "/logs/create")
     public ResponseEntity<LogEventDB> create(@RequestBody LogEvent logEvent){
         LogEventDB logEventDB = new LogEventDB();
-        logEventDB.setAction("POST");
+        logEventDB.setAction(logEvent.getAction());
         logEventDB.setDate(new Timestamp(new Date().getTime()));
         logEventDB.setPayload(logEvent.getPayload().toString());
 
