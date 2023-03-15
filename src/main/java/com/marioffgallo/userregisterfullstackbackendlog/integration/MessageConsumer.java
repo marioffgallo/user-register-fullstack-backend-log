@@ -2,7 +2,7 @@ package com.marioffgallo.userregisterfullstackbackendlog.integration;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.marioffgallo.userregisterfullstackbackendlog.entity.LogEventDB;
-import com.marioffgallo.userregisterfullstackbackendlog.model.LogEvent;
+import com.marioffgallo.userregisterfullstackbackendlog.model.LogEventDTO;
 import com.marioffgallo.userregisterfullstackbackendlog.service.LogEventService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,7 +26,7 @@ public class MessageConsumer {
         ObjectMapper objectMapper = new ObjectMapper();
 
         try {
-            LogEvent receivedObject = objectMapper.readValue(logSerial, LogEvent.class);
+            LogEventDTO receivedObject = objectMapper.readValue(logSerial, LogEventDTO.class);
             log.info("Received log='{}'", receivedObject);
 
             LogEventDB logEventDB = new LogEventDB();

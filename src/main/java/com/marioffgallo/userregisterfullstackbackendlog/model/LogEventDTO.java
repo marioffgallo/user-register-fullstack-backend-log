@@ -9,7 +9,8 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class LogEvent {
+public class LogEventDTO {
+    private int id;
     private String action;
     private Date date;
     private String payload;
