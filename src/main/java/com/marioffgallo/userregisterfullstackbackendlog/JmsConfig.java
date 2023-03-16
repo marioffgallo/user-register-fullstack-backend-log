@@ -10,6 +10,10 @@ import org.springframework.jms.config.DefaultJmsListenerContainerFactory;
 public class JmsConfig {
 
     String brokerUrl = "tcp://localhost:61616";
+    /*
+    CODIGO PARA SUBIR NO DOCKER
+    String brokerUrl = "tcp://user-register-backend:61616";
+     */
 
     @Bean
     public DefaultJmsListenerContainerFactory jmsListenerContainerFactory() {

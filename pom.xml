@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.marioffgallo.user-register-fullstack-backend-log</groupId>
 	<artifactId>user-register-fullstack-backend-log</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<name>user-register-fullstack-backend-log</name>
 	<description>Project in Spring Boot with ActiveMQ</description>
 	<properties>
