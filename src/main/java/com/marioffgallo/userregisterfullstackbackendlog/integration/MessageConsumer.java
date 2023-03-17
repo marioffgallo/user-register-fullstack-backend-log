@@ -13,6 +13,12 @@ import org.springframework.stereotype.Service;
 import java.io.IOException;
 import java.sql.Timestamp;
 
+/**
+ * Message consumer for the logs received from ActiveMQ and saves in the database
+ *
+ * @author Mario F.F Gallo
+ * @version 1.0
+ */
 @Service
 public class MessageConsumer {
 

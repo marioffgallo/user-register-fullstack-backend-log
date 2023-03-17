@@ -7,6 +7,12 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.sql.Timestamp;
 
+/**
+ * Entity LogEventDB for saving in the database
+ *
+ * @author Mario F.F Gallo
+ * @version 1.0
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

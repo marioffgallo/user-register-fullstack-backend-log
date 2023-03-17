@@ -6,6 +6,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
+/**
+ * Microservice responsible for saving logs and listen ActiveMQ
+ *
+ * @author Mario F.F Gallo
+ * @version 1.0
+ */
 @SpringBootApplication
 public class UserRegisterFullstackBackendLogApplication {
 
