@@ -7,9 +7,7 @@ Necessário ter um MySQL instalado com a porta 3306 liberado.
 Username e password precisam ser atualizados no application.properties tambem.
 
 # Gerar imagem no Docker
-Necessário descomentar a primeira linha no application.properties para o maven utilizar as configurações do perfil docker.
-
-No momento é necessário descomentar a variavel brokerUrl no JMSConfig.java pois a porta tcp deve ser outro valor e a anotação @Value do spring não funcionou nesse caso.
+Necessário descomentar a primeira linha no application.properties para o maven utilizar as configurações do perfil docker. Gerar o package da aplicação.
 
 Após isso gerar a imagem com o comando:
 

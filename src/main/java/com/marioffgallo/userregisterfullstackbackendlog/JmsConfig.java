@@ -1,8 +1,10 @@
 package com.marioffgallo.userregisterfullstackbackendlog;
 
 import org.apache.activemq.pool.PooledConnectionFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.jms.config.DefaultJmsListenerContainerFactory;
 
 /**
@@ -12,13 +14,11 @@ import org.springframework.jms.config.DefaultJmsListenerContainerFactory;
  * @version 1.0
  */
 @Configuration
+@PropertySource(value = { "classpath:application.properties" })
 public class JmsConfig {
 
-    String brokerUrl = "tcp://localhost:61616";
-    /*
-    CODIGO PARA SUBIR NO DOCKER
-    String brokerUrl = "tcp://user-register-backend:61616";
-     */
+    @Value("${spring.activemq.broker-url}")
+    String brokerUrl;
 
     @Bean
     public DefaultJmsListenerContainerFactory jmsListenerContainerFactory() {
